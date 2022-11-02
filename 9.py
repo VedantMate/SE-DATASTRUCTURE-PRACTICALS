@@ -25,13 +25,16 @@ x = numpy.array([[list1[0],list1[1],list1[2]], [list1[3],list1[4],list1[5]], [li
 y = numpy.array([[list2[0],list2[1],list2[2]], [list2[3],list2[4],list2[5]], [list2[6],list2[7],list2[8]]])
 
 print("The element wise addition of matrix is : ")
-print(numpy.add(x,y))
+print(f'{numpy.add(x,y)} \n')
 
 print("The element wise subtraction of matrix is : ")
-print(numpy.subtract(x,y))
+print(f'{numpy.subtract(x,y)} \n')
 
 print ("The product of matrices is : ")
-print (numpy.dot(x,y))
+print (f'{numpy.dot(x,y)} \n')
 
-print("The transpose of given matrix is : ")
-print(x.T)
+print("The transpose of matrix 1 is : ")
+print(f'{x.T} \n')
+
+print("The transpose of matrix 2 is : ")
+print(f'{y.T} \n')
