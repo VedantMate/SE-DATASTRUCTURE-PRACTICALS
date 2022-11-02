@@ -1,3 +1,11 @@
+# Experiment No. 14 : Write a Python program to store first year percentage of students in array. Write
+#                    function for sorting array of floating point numbers in ascending order using
+#
+#                    a) Selection Sort.
+#                    b) Bubble sort and display top five scores.
+
+from itertools import islice 
+
 def Selection_Sort(marks):
     for i in range(len(marks)):
 
@@ -29,8 +37,13 @@ def Bubble_Sort(marks):
 
 
 def top_five_marks(marks):
-    print("Top",len(marks),"Marks are : ")
-    print(*marks[::-1], sep="\n")
+    N = 5
+    print("Top 5 Marks are : ")
+    result = list(islice(reversed(marks),0,N))
+
+    for i in range (0,5):
+        print(result[i])
+
 
 marks=[]
 n = int(input("Enter number of students whose marks are to be displayed : "))
@@ -44,7 +57,7 @@ print(marks)
 
 flag=1
 while flag==1:
-    print("\n---------------MENU---------------")
+    print("\n<---------------MENU--------------->")
     print("1. Selection Sort of the marks")
     print("2. Bubble Sort of the marks")
     print("3. Exit")
