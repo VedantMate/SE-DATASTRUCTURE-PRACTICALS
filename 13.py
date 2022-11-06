@@ -1,3 +1,10 @@
+# Experiment No. 13 : Write a Python program to maintain club members, sort on roll numbers in ascending
+#                     order. Write function “Ternary_Search” to search whether particular student is member
+#                     of club or not. Ternary search is modified binary search that divides array into 3 halves
+#                     instead of two.
+
+
+
 def accept_roll():
     roll_no = []
     no_of_students = int(input("Enter the number of students  : "))
@@ -12,7 +19,7 @@ def print_roll(roll_no):
 def insertion_sort(roll_no):
     for i in range(1,len(roll_no)):
         key = roll_no[i]
-        j = i-1;
+        j = i-1
         while j >= 0 and key < roll_no[j]:
             roll_no[j+1] = roll_no[j]
             j -= 1
