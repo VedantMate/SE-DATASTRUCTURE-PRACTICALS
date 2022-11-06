@@ -5,8 +5,6 @@
 #                             d) To display index of first appearance of the substring.
 #                             e) To count the occurrences of each word in a given string.
 
-
-
 # a) To display word with the longest length
 
 sentence = input("Enter sentence: ")
