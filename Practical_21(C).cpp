@@ -1,4 +1,4 @@
-//  Experiment No.20 : Write C++ program for storing appointment schedule for day. Appointments are booked
+//  Experiment No.21 : Write C++ program for storing appointment schedule for day. Appointments are booked
 //                     randomly using linked list. Set start and end time and min and max duration for visit slot.
 //
 //                     Write functions for :
